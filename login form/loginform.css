@@ -1,0 +1,121 @@
+/* google font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,300;1,400&display=swap');
+
+ /* colors */
+:root{
+    --firts-color:hsl(244%, 75%, 57%);
+    --second-color:hsl(249%, 64%, 47%);
+    --title-color:hsl(244%, 12%, 12%);
+    --text-color:hsl(244%, 4%, 36%);
+    --body-color:hsl(208%, 97%, 85%);
+
+
+    --body-font: 'Poppins', sans-serif;
+    --h2-font-size:1.25rem;
+    --small-font-size:813rem;
+    --smaller-font-size:75rem;
+
+
+    --font-medium:500;
+    --font-semi-bold:600;
+}
+
+@media screen and (min-width:1024px) {
+    :root
+        {
+            --h2-font-size:1.75rem;
+        --normal-font-size:1rem;
+        --small-font-size:87rem;
+        --smaller-font-size:813rem;
+
+        }
+    
+    
+}
+
+
+/* base */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(153, 212, 154);
+    font-family: var(--body-font);
+    color:var(--text-color)
+}
+
+input,
+button{
+    font-family: var(--body-font);
+    border: none;
+    outline: none;
+}
+
+img{
+    max-width: 100;
+    height: auto;
+}
+
+.login__content,
+.login__form,
+.login__inputs{
+    display: grid;
+}
+.login__content{
+    position:relative ;
+    height: 100vh;
+    align-items: center;
+}
+
+.login__img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+ .login__form{
+    position:relative ;
+    background-color:hsla(244,16%.92%,.6) ;
+    border:2px solid hsla(244,16%.92%,.75) ;
+    margin-inline: 30.5rem;
+    row-gap: 2.25rem;
+    backdrop-filter:blur(20px) ;
+    padding: 6rem;
+    border-radius: 0.5rem;
+ } 
+ .login__title{
+    color: var(--title-color);
+    font-size: var(--h2-font-size);
+    margin-bottom: .5rem;
+ } 
+.login__title span{
+    color: var(--firts-color);
+}
+/* .login__description{
+    font-size: var(--small-font-size);
+}
+.login__inputs{
+    row-gap: .75rem;
+    margin-bottom:.5rem; 
+}
+.login__label{
+    display: block;
+    color: var(--title -color);
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    margin-bottom: .25rem;
+}
+.login__input{
+    width: 100%;
+    padding: 14px 12px;
+
+
+
+}
+ */
